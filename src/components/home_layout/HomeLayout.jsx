@@ -37,15 +37,25 @@ class HomeLayout extends Component {
             </div>
           </section>
 
-          <section className="shows">
+     <section className="shows">
             <article className="show">
               <h2 className="show-title">Most popular subjects</h2>
-              <ul className="row show-items">
+          {/*    <ul className="row show-items">
                 <li className="show-item"><Card className="no-detail" tutor={this.props.tutors[0]} key={0} /></li>
                 <li className="show-item"><Card className="no-detail" tutor={this.props.tutors[1]} key={1} /></li>
                 <li className="show-item"><Card className="no-detail" tutor={this.props.tutors[2]} key={2} /></li>
                 <li className="show-item"><Card className="no-detail" tutor={this.props.tutors[3]} key={3} /></li>
-              </ul>
+              </ul> */ }
+<div class="container">
+<div class="row">
+<section id="test">
+  <div class="col"><Card className="no-detail" tutor={this.props.tutors[0]} key={0} /></div>
+  <div class="col"><Card className="no-detail" tutor={this.props.tutors[1]} key={1} /></div>
+  <div class="col"><Card className="no-detail" tutor={this.props.tutors[2]} key={2} /></div>
+  <div class="col"><Card className="no-detail" tutor={this.props.tutors[3]} key={3} /></div>
+  </section>
+</div>
+</div>
             </article>
             <article className="show">
               <h2 className="show-title">Tutors for Most popular subjects</h2>
